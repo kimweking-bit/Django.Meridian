@@ -1,4 +1,4 @@
-/* =========================
+﻿/* =========================
    Base
 ========================= */
 :root {
@@ -572,7 +572,7 @@ a {
 }
 
 .room-amenities li::before {
-  content: "\\2022";
+  content: "â€¢";
   position: absolute;
   left: 0;
   color: var(--gold);
@@ -997,3 +997,4 @@ a {
   color: var(--text-muted);
   font-size: 1.1rem;
 }
+
