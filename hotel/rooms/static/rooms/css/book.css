@@ -1,0 +1,189 @@
+/* =========================
+   Book Page Only
+========================= */
+.book-page {
+  background-color: #000;
+}
+
+.book-page .hero-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0.9),
+      rgba(17, 17, 17, 0.95)
+    ),
+    url('https://source.unsplash.com/1920x800/?luxury-hotel,interior')
+      center/cover no-repeat;
+  color: #fff;
+}
+
+.book-page .hero-book h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: #FFD700;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.book-page .hero-book p {
+  font-size: 1.25rem;
+  opacity: 0.8;
+}
+
+.book-page .suite-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.book-page .suite-card {
+  background-color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.book-page .suite-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.25);
+}
+
+.book-page .suite-card.selected {
+  border: 2px solid #FFD700;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.book-page .suite-card-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.book-page .suite-card-content h3 {
+  font-family: 'Cinzel', serif;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.book-page .suite-card-content p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+.book-page .suite-card-content .price {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.book-page .booking-form,
+.book-page .payment-section {
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  background-color: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+  padding: 2rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.book-page .payment-section {
+  margin-bottom: 6rem;
+}
+
+.book-page .booking-form h2,
+.book-page .payment-section h2 {
+  font-family: 'Cinzel', serif;
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.book-page .booking-form label,
+.book-page .payment-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.book-page .booking-form input,
+.book-page .booking-form select,
+.book-page .payment-section input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.book-page .booking-form input:focus,
+.book-page .booking-form select:focus,
+.book-page .payment-section input:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.book-page .payment-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.book-page .payment-logos img {
+  width: 60px;
+  opacity: 0.8;
+  transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 12px;
+}
+
+.book-page .payment-logos img:hover {
+  transform: translateY(-4px);
+  opacity: 1;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
+.book-page .submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  background: #FFD700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.book-page .submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+  .book-page .suite-selection {
+    flex-direction: column;
+    align-items: center;
+  }
+}

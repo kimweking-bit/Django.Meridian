@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero-home">
+  <div class="hero-bg"></div>
+  <div class="overlay"></div>
+
+  <div class="mist">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">Royal Meridian Luxury Hotel</h1>
+    <p class="hero-subtitle">Where elegance meets timeless sophistication</p>
+    <div class="hero-buttons">
+      <a href="{% url 'rooms' %}" class="btn btn-primary">Explore Rooms</a>
+      <a href="{% url 'book' %}" class="btn btn-secondary">Book Now</a>
+    </div>
+  </div>
+
+  <div class="particles">
+    <span style="--i: 0"></span>
+    <span style="--i: 1"></span>
+    <span style="--i: 2"></span>
+    <span style="--i: 3"></span>
+    <span style="--i: 4"></span>
+    <span style="--i: 5"></span>
+    <span style="--i: 6"></span>
+    <span style="--i: 7"></span>
+    <span style="--i: 8"></span>
+    <span style="--i: 9"></span>
+  </div>
+</section>
+
+{% include 'rooms/partials/rooms_section.html' %}
+{% include 'rooms/partials/amenities_section.html' %}
+{% include 'rooms/partials/contact_section.html' %}
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/InertiaPlugin.min.js"></script>
+{% endblock %}

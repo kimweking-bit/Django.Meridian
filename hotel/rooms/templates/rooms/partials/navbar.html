@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <div class="logo">
+    <a href="{% url 'home' %}">ROYAL MERIDIAN</a>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="{% url 'home' %}">Home</a>
+
+    <div class="dropdown">
+      <a href="{% url 'rooms' %}">Rooms <span class="arrow">&#x25BE;</span></a>
+      <div class="dropdown-content">
+        <a href="{% url 'rooms' %}">Deluxe Suite</a>
+        <a href="{% url 'rooms' %}">Executive Room</a>
+        <a href="{% url 'rooms' %}">Presidential Suite</a>
+      </div>
+    </div>
+
+    <a href="{% url 'amenities' %}">Amenities</a>
+    <a href="{% url 'book' %}">Book Now</a>
+    <a href="{% url 'contact' %}">Contact</a>
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>

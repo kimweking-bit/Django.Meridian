@@ -1,0 +1,147 @@
+{% load static %}
+<section class="rooms-section" id="rooms">
+  <h2 class="section-title">Our Exclusive Rooms</h2>
+
+  <div class="rooms-container">
+    <div class="room-card deluxe">
+      <div class="room-badge">Guest Favorite</div>
+      <div class="carousel deluxe-carousel">
+        <div class="carousel-track">
+          <img
+            src="{% static 'rooms/img/Deluxe room/deluxe5.png' %}"
+            alt="Deluxe Room 1"
+          />
+          <img
+            src="{% static 'rooms/img/Deluxe room/deluxe4.png' %}"
+            alt="Deluxe Room 2"
+          />
+          <img
+            src="{% static 'rooms/img/Deluxe room/deluxe3.png' %}"
+            alt="Deluxe Room 3"
+          />
+          <img
+            src="{% static 'rooms/img/Deluxe room/deluxe2.png' %}"
+            alt="Deluxe Room 4"
+          />
+          <img
+            src="{% static 'rooms/img/Deluxe room/deluxe1.png' %}"
+            alt="Deluxe Room 5"
+          />
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous slide">&lt;</button>
+        <button class="carousel-btn next" aria-label="Next slide">&gt;</button>
+        <div class="carousel-dots"></div>
+      </div>
+      <div class="room-content">
+        <h3 class="room-name">Deluxe Room</h3>
+        <p class="room-price">$350 / night</p>
+        <p class="room-description">
+          Spacious room with king-size bed, premium linens, smart TV, high-speed
+          WiFi, minibar, and a private balcony overlooking the pool.
+        </p>
+        <ul class="room-amenities">
+          <li>King-size Bed</li>
+          <li>Private Balcony</li>
+          <li>High-Speed WiFi</li>
+          <li>Mini Bar &amp; Coffee Station</li>
+          <li>Luxury Bath Amenities</li>
+        </ul>
+        <a href="{% url 'book' %}" class="btn-book">Book Now</a>
+      </div>
+    </div>
+
+    <div class="room-card executive">
+      <div class="room-badge">Most Popular</div>
+      <div class="carousel executive-carousel">
+        <div class="carousel-track">
+          <img
+            src="{% static 'rooms/img/Executive room/bangkok-thailand-august-12-2016-beautiful-luxury-bathroom.jpg' %}"
+            alt="Executive Room 1"
+          />
+          <img
+            src="{% static 'rooms/img/Executive room/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg' %}"
+            alt="Executive Room 2"
+          />
+          <img
+            src="{% static 'rooms/img/Executive room/visualsofdana-T5pL6ciEn-I-unsplash.jpg' %}"
+            alt="Executive Room 3"
+          />
+          <img
+            src="{% static 'rooms/img/Executive room/valentine-s-day-celebration-with-flowers.jpg' %}"
+            alt="Executive Room 4"
+          />
+          <img
+            src="{% static 'rooms/img/Executive room/visualsofdana-T5pL6ciEn-I-unsplash.jpg' %}"
+            alt="Executive Room 5"
+          />
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous slide">&lt;</button>
+        <button class="carousel-btn next" aria-label="Next slide">&gt;</button>
+        <div class="carousel-dots"></div>
+      </div>
+      <div class="room-content">
+        <h3 class="room-name">Executive Room</h3>
+        <p class="room-price">$500 / night</p>
+        <p class="room-description">
+          Elegant suite with king-size bed, lounge area, panoramic city view,
+          smart TV, WiFi, minibar, and a luxurious bathroom with spa amenities.
+        </p>
+        <ul class="room-amenities">
+          <li>King-size Bed</li>
+          <li>Lounge Area</li>
+          <li>Panoramic Views</li>
+          <li>Luxury Bathroom &amp; Spa</li>
+          <li>High-Speed WiFi</li>
+        </ul>
+        <a href="{% url 'book' %}" class="btn-book">Book Now</a>
+      </div>
+    </div>
+
+    <div class="room-card presidential">
+      <div class="room-badge">Exclusive Offer</div>
+      <div class="carousel presidential-carousel">
+        <div class="carousel-track">
+          <img
+            src="{% static 'rooms/img/Presidential Room/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg' %}"
+            alt="Presidential Suite 1"
+          />
+          <img
+            src="{% static 'rooms/img/Presidential Room/indoor-design-luxury-resort.jpg' %}"
+            alt="Presidential Suite 2"
+          />
+          <img
+            src="{% static 'rooms/img/Presidential Room/indoor-wooden-mini-pool-with-metal-handle.jpg' %}"
+            alt="Presidential Suite 3"
+          />
+          <img
+            src="{% static 'rooms/img/Presidential Room/interior-design-neoclassical-style-with-furnishings-decor.jpg' %}"
+            alt="Presidential Suite 4"
+          />
+          <img
+            src="{% static 'rooms/img/Presidential Room/prem 3.jpg' %}"
+            alt="Presidential Suite 5"
+          />
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous slide">&lt;</button>
+        <button class="carousel-btn next" aria-label="Next slide">&gt;</button>
+        <div class="carousel-dots"></div>
+      </div>
+      <div class="room-content">
+        <h3 class="room-name">Presidential Suite</h3>
+        <p class="room-price">$1,200 / night</p>
+        <p class="room-description">
+          Ultimate luxury with private terrace, jacuzzi, lounge area, full
+          dining setup, smart home automation, and exclusive concierge service.
+        </p>
+        <ul class="room-amenities">
+          <li>Private Terrace &amp; Jacuzzi</li>
+          <li>Smart Home Automation</li>
+          <li>Exclusive Concierge</li>
+          <li>Full Dining Area</li>
+          <li>Panoramic Views</li>
+        </ul>
+        <a href="{% url 'book' %}" class="btn-book">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
