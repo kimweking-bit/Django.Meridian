@@ -572,7 +572,7 @@ a {
 }
 
 .room-amenities li::before {
-  content: "â€¢";
+  content: "•";
   position: absolute;
   left: 0;
   color: var(--gold);
@@ -997,4 +997,5 @@ a {
   color: var(--text-muted);
   font-size: 1.1rem;
 }
+
 
